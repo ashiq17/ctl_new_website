@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!-- Boxicon CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+    <!-- Magnific CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Tittle -->
+    <title>Cyberdyne Technology Ltd - Software, IT Solution and Digital Service Provider</title>
+
+    <style>
+        .navbar-brand img {
+            margin: -10px 0px 0px 0px;
+            ;
+        }
+        
+        .mean-menu {
+            /*margin-left: 150px;*/
+        }
+        
+        .company-tittle p {
+            text-align: justify;
+            padding-right: 10px;
+        }
+        
+        .single-client p {
+            text-align: justify;
+        }
+        
+        .accordion-content {
+            text-align: justify;
+        }
+        
+        p {
+            text-align: justify;
+        }
+        
+        .top-content {
+            padding-bottom: 20px;
+            ;
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            /* Show 4th slide on md if col-md-4*/
+            .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -33.3333%;
+                /*change this with javascript in the future*/
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+        }
+        
+        @media (min-width: 576px) and (max-width: 768px) {
+            /* Show 3rd slide on sm if col-sm-6*/
+            .carousel-inner .active.col-sm-6.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -50%;
+                /*change this with javascript in the future*/
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+        }
+        
+        @media (min-width: 576px) {
+            .carousel-item {
+                margin-right: 0;
+            }
+            /* show 2 items */
+            .carousel-inner .active+.carousel-item {
+                display: block;
+            }
+            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+                transition: none;
+            }
+            .carousel-inner .carousel-item-next {
+                position: relative;
+                transform: translate3d(0, 0, 0);
+            }
+            /* left or forward direction */
+            .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+            .carousel-item-next.carousel-item-left+.carousel-item,
+            .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(-100%, 0, 0);
+                visibility: visible;
+            }
+            /* farthest right hidden item must be also positioned for animations */
+            .carousel-inner .carousel-item-prev.carousel-item-right {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+            /* right or prev direction */
+            .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+            .carousel-item-prev.carousel-item-right+.carousel-item,
+            .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(100%, 0, 0);
+                visibility: visible;
+                display: block;
+                visibility: visible;
+            }
+        }
+        /* MD */
+        
+        @media (min-width: 768px) {
+            /* show 3rd of 3 item slide */
+            .carousel-inner .active+.carousel-item+.carousel-item {
+                display: block;
+            }
+            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+                transition: none;
+            }
+            .carousel-inner .carousel-item-next {
+                position: relative;
+                transform: translate3d(0, 0, 0);
+            }
+            /* left or forward direction */
+            .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(-100%, 0, 0);
+                visibility: visible;
+            }
+            /* right or prev direction */
+            .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(100%, 0, 0);
+                visibility: visible;
+                display: block;
+                visibility: visible;
+            }
+        }
+        /* LG */
+        
+        @media (min-width: 991px) {
+            /* show 4th item */
+            .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+                display: block;
+            }
+            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+                transition: none;
+            }
+            /* Show 5th slide on lg if col-lg-3 */
+            .carousel-inner .active.col-lg-3.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -25%;
+                /*change this with javascript in the future*/
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+            /* left or forward direction */
+            .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(-100%, 0, 0);
+                visibility: visible;
+            }
+            /* right or prev direction //t - previous slide direction last item animation fix */
+            .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(100%, 0, 0);
+                visibility: visible;
+                display: block;
+                visibility: visible;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .banner-area {
+                margin-left: 0px!important;
+            }
+        }
+    </style>
+    <script>
+        $('#carousel-example').on('slide.bs.carousel', function(e) {
+            /*
+                CC 2.0 License Iatek LLC 2018 - Attribution required
+            */
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 8;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    } else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- PreLoader Start -->
+    <div class="loader-content">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PreLoader End -->
+
+    <!-- Header Area -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-sm-0 d-none d-sm-block d-sm-none d-md-block">
+                    <ul class="header-contact">
+
+                    </ul>
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-8 text-right pr-0">
+                    <div class="header-content-right">
+                        <ul class="header-contact">
+                            <li><a href="tel:+88 01748-715715"><i class="bx bx-support"></i> 24/7 Support</a></li>
+                            <li class="alert-heading"><a href="tel:+88029033071"><i class="bx bxs-phone-call"></i> <b> +88 02-9033071</b></a></li>
+                            <li><a href="+8801748715715"><i class="bx bx-mobile"></i><b> +88 01748-715 715 </b></a></li>
+                            <li><a href="mailto:info@cyberdynetechnologyltd.com"><i class="bx bxs-envelope"></i> contact@cyberdynetechnologyltd.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 text-right pl-0">
+                    <div class="header-content-right">
+                        <ul class="header-social">
+                            <li>
+                                <a href="https://www.facebook.com/cyberdynetechnologyltdbd/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/CyberdyneLtd" target="_blank"><i class="bx bxl-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@cyberdynetechnologyltd.com" target="_blank"> <i class="bx bxs-envelope"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> <i class="bx bxl-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!--Navbar Area -->
+    <div class="navbar-area three">
+        <div class="mobile-nav">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="logo" />
+            </a>
+        </div>
+
+        <div class="main-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-left">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> Web Solution</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="web_design_development.html" class="nav-link active">Website Design & Development</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="domain-hosting.html" class="nav-link"> Domain & Hosting Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="bulk_sms.html" class="nav-link">Bulk SMS</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Software Solution</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="web_based_software.html" class="nav-link"> Web Based Software</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#desktop_based_software.html" class="nav-link"> Desktop Based Software</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Digital Marketing</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="https://digibiztec.com/search-engine-optimisation/" target="_blank" class="nav-link"> Search Engine Optimization (SEO)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://digibiztec.com/social-media-marketing/" target="_blank" class="nav-link"> Social Media Marketing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://digibiztec.com/content-writing/" target="_blank" class="nav-link"> Content Writing</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="clients.html" class="nav-item">Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="#blog.html" class="nav-link">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#blog-details.html" class="nav-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+
+    <!-- Start Page Title Area -->
+    <div class="page-title-area">
+        <div class="container">
+            <div class="page-title-content">
+                <h2>About</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                                Home 
+                            </a>
+                    </li>
+
+                    <li class="active">Clients</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-shape">
+            <div class="shape1">
+                <img src="assets/images/shape/1.png" alt="shape" />
+            </div>
+            <div class="shape3">
+                <img src="assets/images/shape/3.png" alt="shape" />
+            </div>
+            <div class="shape4">
+                <img src="assets/images/shape/4.png" alt="shape" />
+            </div>
+            <div class="shape5">
+                <img src="assets/images/shape/5.png" alt="shape" />
+            </div>
+            <div class="shape6">
+                <img src="assets/images/shape/6.png" alt="shape" />
+            </div>
+
+        </div>
+    </div>
+    <!-- End Page Title Area -->
+
+
+    <!-- Start Client Area -->
+    <section class="client-area ptb-100 bg-color">
+        <div class="container">
+            <div class="section-title">
+                <!--<span>Testimonials</span>-->
+                <h2>Our Major Client’s</h2>
+                <p></p>
+            </div>
+
+
+            <!-- Top content -->
+            <!-- <div class="top-content">
+                <div class="container-fluid">
+                    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2 active">
+                                <img src="assets/images/client/abdurrazzaque.png" class="img-fluid mx-auto d-block" alt="img1">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/dr-mohammad-ayub-miah.png" class="img-fluid mx-auto d-block" alt="img2">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/md-nusrot-hossan.png" class="img-fluid mx-auto d-block" alt="img3">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/abdurrazzaque.png" class="img-fluid mx-auto d-block" alt="img4">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/dr-mohammad-ayub-miah.png" class="img-fluid mx-auto d-block" alt="img5">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/md-nusrot-hossan.png" class="img-fluid mx-auto d-block" alt="img6">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/abdurrazzaque.png" class="img-fluid mx-auto d-block" alt="img4">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/dr-mohammad-ayub-miah.png" class="img-fluid mx-auto d-block" alt="img5">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/md-nusrot-hossan.png" class="img-fluid mx-auto d-block" alt="img6">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/abdurrazzaque.png" class="img-fluid mx-auto d-block" alt="img4">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/dr-mohammad-ayub-miah.png" class="img-fluid mx-auto d-block" alt="img5">
+                            </div>
+                            <div class="carousel-item col-12 col-sm-6 col-md-2 col-lg-2">
+                                <img src="assets/images/client/md-nusrot-hossan.png" class="img-fluid mx-auto d-block" alt="img6">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+
+
+    <!-- Start Client Area -->
+    <section class="client-area ptb-100 bg-color">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Local & International Client’s</h2>
+                <p></p>
+            </div>
+            <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+
+                <!-- Local Client -->
+
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="background-color: bisque;">
+                    <section class="home2-choose-area pt-100 pb-70">
+                        <div class="container">
+                            <div class="section-title">
+                                <h3>Local Client’s</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/kingdom-group-logo.png" alt="kingdom group">
+                                        </div>
+                                        <h6>KINGDOM GROUP</h6>
+                                        <h6><a href="http://www.kingdom.com.bd/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/global_tv.png" alt="">
+                                        </div>
+                                        <h6>Global Television</h6>
+                                        <h6><a href="https://www.globaltvbd.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/বাংলা.png" alt="">
+                                        </div>
+                                        <h6>বাংলা</h6>
+                                        <h6><a href="https://be.bangla.report/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/noor_tv.png" alt="">
+                                        </div>
+                                        <h6>নূর টিভি</h6>
+                                        <h6><a href="http://noorbd.tv/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/independent_tv.png" alt="">
+                                        </div>
+                                        <h6>Independent Television</h6>
+                                        <h6><a href="http://independent24.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/ntv.png" alt="">
+                                        </div>
+                                        <h6>NTV</h6>
+                                        <h6><a href="https://www.ntvbd.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/MyTv_Logo.png" alt="">
+                                        </div>
+                                        <h6>myTV</h6>
+                                        <h6><a href="http://mytvbd.tv/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/daily_naya_diganta.png" alt="">
+                                        </div>
+                                        <h6>Daily Naya Diganta</h6>
+                                        <h6><a href="https://www.dailynayadiganta.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/dskm_main_logo.png" alt="">
+                                        </div>
+                                        <h6>দারুননাজাত সিদ্দীকিয়া কামিল মাদরাসা</h6>
+                                        <h6><a href="http://dskm.ac.bd/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/দারুননাজাত সিদ্দীকিয়া কামিল মাদরাসা (তাখসীসি শাখা).png" alt="">
+                                        </div>
+                                        <h6>দারুননাজাত সিদ্দীকিয়া কামিল মাদরাসা (তাখসীসি শাখা)</h6>
+                                        <h6><a href="http://www.dskmtakhsisibranch.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/jannatul_ma'wa_model_madrasah_logo.png" alt="">
+                                        </div>
+                                        <h6>জান্নাতুল মা’ওয়া মডেল মাদ্‌রাসা</h6>
+                                        <h6><a href="http://www.jannatulmawa2009.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/jamia-arabia-khadimul-islam-logo.png" alt="">
+                                        </div>
+                                        <h6>জামিয়া আরাবিয়া খাদিমুল ইসলাম</h6>
+                                        <h6><a href="http://www.jakhibd.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/Ibn-sina-logo.jpg" alt="">
+                                        </div>
+                                        <h6>ইবনে সিনা মডেল স্কুল</h6>
+                                        <h6><a href="http://www.ibnsinamodelschoolbd.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/গ্রীন গার্ডেন হাই স্কুল.png" alt="">
+                                        </div>
+                                        <h6>গ্রীন গার্ডেন হাই স্কুল</h6>
+                                        <h6><a href="http://www.greengardenhs.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/northern_university_laboratory_school&college.png" alt="">
+                                        </div>
+                                        <h6>Northern University Laboratory School & College </h6>
+                                        <h6><a href="#" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/mothers_public_school.png" alt="">
+                                        </div>
+                                        <h6>Mothers Public School </h6>
+                                        <h6><a href="http://www.motherspublicschoolbd.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/arsc.png" alt="abdur razzaque school and college">
+                                        </div>
+                                        <h6>Abdur Razzaque School & College</h6>
+                                        <h6><a href="http://armagroup.com.bd/arscbd.com/index.php" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/south_breeze_imperial_school_logo1.png" alt="">
+                                        </div>
+                                        <h6>সাউথ ব্রীজ ইমপেরিয়াল স্কুল</h6>
+                                        <h6><a href="http://www.sbimperialschool.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/IQRA Logo.jpg" alt="">
+                                        </div>
+                                        <h6>IQRA Model School</h6>
+                                        <h6><a href="http://iqramodelbnc.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/ARMA-GROUP-Logo.jpg" alt="">
+                                        </div>
+                                        <h6>ARMA GROUP</h6>
+                                        <h6><a href="http://armagroup.com.bd/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/aa yarn.png" alt="">
+                                        </div>
+                                        <h6>AA Yarn Mills Ltd</h6>
+                                        <h6><a href="#" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/t&s_button.png" alt="">
+                                        </div>
+                                        <h6>T&S Buttons Bangladesh Ltd.</h6>
+                                        <h6><a href="http://www.tsbuttons.com.bd/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/snowtex group.png" alt="">
+                                        </div>
+                                        <h6>SNOWTEX GROUP</h6>
+                                        <h6><a href="https://www.snowtex.org/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/south_west_composite.png" alt="">
+                                        </div>
+                                        <h6>SOUTHWEST COMPOSITE LTD</h6>
+                                        <h6><a href="http://www.southwest-bd.net/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/dhorola_group.png" alt="">
+                                        </div>
+                                        <h6>Dhorola Group</h6>
+                                        <h6><a href="https://www.dhorolagroup.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/bhl_logo_s_final.gif" alt="">
+                                        </div>
+                                        <h6>Best Holdings Limited</h6>
+                                        <h6><a href="https://bhlbd.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/czm.png" alt="">
+                                        </div>
+                                        <h6>Center for Zakat Management</h6>
+                                        <h6><a href="http://czm-bd.org/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/eco_versuite.png" alt="">
+                                        </div>
+                                        <h6>Echo Light Ltd.</h6>
+                                        <h6><a href="http://www.eco-versute.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/techno_apozee.jpg" alt="">
+                                        </div>
+                                        <h6>Techno Apogee</h6>
+                                        <h6><a href="http://www.technoapogee.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/OTL-Logo.png" alt="">
+                                        </div>
+                                        <h6>On Track Link</h6>
+                                        <h6><a href="http://www.otl.com.bd/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/local/haj_corporation.png" alt="">
+                                        </div>
+                                        <h6>Haj Corporation</h6>
+                                        <h6><a href="http://www.hajgroup.com.bd/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- End Local Client -->
+
+                <!--International Client -->
+
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="background-color: cadetblue">
+                    <section class="home2-choose-area pt-100 pb-70">
+                        <div class="container">
+                            <div class="section-title">
+                                <h3>International Client’s</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/cornerstone_protection.png" alt="">
+                                        </div>
+                                        <h6>Cornerstone Protection, USA</h6>
+                                        <h6><a href="https://www.cornerstoneprotection.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Destiny Marketing Solutions.png" alt="">
+                                        </div>
+                                        <h6>Destiny Marketing Solutions, USA</h6>
+                                        <h6><a href="https://www.destinymarketingsolutions.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/asset_agent.png" alt="">
+                                        </div>
+                                        <h6>Asset Agent, Australia</h6>
+                                        <h6><a href="https://www.assetagents.com.au/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/mainsteet_insurance_and_financial_logo.png" alt="">
+                                        </div>
+                                        <h6>Main Street Insurance & Financial Services, USA</h6>
+                                        <h6><a href="https://www.napleshomeinsurancefl.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/asap.png" alt="">
+                                        </div>
+                                        <h6>ASAP Security, LLC, USA</h6>
+                                        <h6><a href="https://www.serviceasap.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/man-of-many_1200x1200.webp" alt="">
+                                        </div>
+                                        <h6>Man of Many</h6>
+                                        <h6><a href="https://manofmany.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/International Organization for Standardization.png" alt="">
+                                        </div>
+                                        <h6>ISO Development, USA</h6>
+                                        <h6><a href="https://www.iso.org" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Anis Enterprise.png" alt="">
+                                        </div>
+                                        <h6>Anis Enterprise, Malaysia</h6>
+                                        <h6><a href="http://anisenterprise.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Upward Homes.png" alt="">
+                                        </div>
+                                        <h6>Upward Home Solution, USA</h6>
+                                        <h6><a href="https://upwardhomes.net/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Outrun Members.png" alt="">
+                                        </div>
+                                        <h6>Outrun SEO, USA</h6>
+                                        <h6><a href="https://outrunseo.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/SEO Firepower.png" alt="">
+                                        </div>
+                                        <h6>SEO Firepower, USA</h6>
+                                        <h6><a href="https://seofirepower.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Creativity, Inc.png" alt="">
+                                        </div>
+                                        <h6>Creative Inc, USA</h6>
+                                        <h6><a href="http://www.creativityincorporated.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Local SEO Guide.png" alt="">
+                                        </div>
+                                        <h6>Local SEO Guide, USA</h6>
+                                        <h6><a href="http://www.localseoguide.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Phase 2 Services.png" alt="">
+                                        </div>
+                                        <h6>Phase 2 Services, USA</h6>
+                                        <h6><a href="http://www.carpetcleaninginoakbrook.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Friends of the Elderly.png" alt="">
+                                        </div>
+                                        <h6>Football Friends Media, UK</h6>
+                                        <h6><a href="" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/Fuller.png" alt="">
+                                        </div>
+                                        <h6>Fuller Enterprises, Australia</h6>
+                                        <h6><a href="" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/BrightStone .png" alt="">
+                                        </div>
+                                        <h6>Brightstone, USA</h6>
+                                        <h6><a href="http://brightstone.org/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="single-choose">
+                                        <div class="icon">
+                                            <!-- <i class="flaticon-friends"></i> -->
+                                            <img src="assets/images/client-logo/international/MarketingProfs.png" alt="">
+                                        </div>
+                                        <h6>Marketing Pros, USA</h6>
+                                        <h6><a href="https://www.marketingprofs.com/" target="_blank">Website Link</a></h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--End International Client -->
+
+            </div>
+    </section>
+
+    <!-- End Client Area -->
+
+
+    <!-- Footer Area -->
+
+    <footer class="footer-area footer-area-2 pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="content">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+                        </div>
+                        <p>Cyberdyne Technology LTD is a reputed software company with 5 Years of experience and located in Dhaka, Bangladesh. Our service is Customized Software Development, Website Development, Digital Marketing, SEO, SMM, Domain & Hosting
+                            Selling.
+                        </p>
+                        <div class="subscribe">
+                            <h4>Join Newsletter</h4>
+                            <form class="newsletter-form" data-toggle="validator">
+                                <input type="email" id="emails" class="form-control" placeholder="Your Email" name="EMAIL" required autocomplete="off">
+
+                                <button class="box-btn" type="submit">
+                                        Subscribe
+                                    </button>
+
+                                <div id="validator-newsletter" class="form-result"></div>
+                            </form>
+                        </div>
+
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/cyberdynetechnologyltdbd/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/CyberdyneLtd" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cyberdynetechnologyltd/?hl=en" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/cyberdynetechnologyltd/" target="_blank"><i class='bx bxl-pinterest' ></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content ml-15">
+                        <h3>Our Service</h3>
+                        <ul class="footer-list">
+                            <li><a href="#"> Web Applications Development</a></li>
+                            <li><a href="#"> Search Engine Optimization (SEO)</a></li>
+                            <li><a href="#"> Social Media Marketing</a></li>
+                            <li><a href="#"> Content Writing</a></li>
+                            <li><a href="#"> Domain & Hosting Reseller</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="content">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-list">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="solutions.html">Service</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="privecy.html">Privacy & Policy</a></li>
+                            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                            <!--<li><a href="#">Data Analysis</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content contacts">
+                        <h3 class="ml-40">Contact</h3>
+                        <ul class="footer-list foot-social">
+                            <li><a href="tel:+1123456789"><i class="bx bx-mobile-alt"></i> +88 01748-715 715</a></li>
+                            <li><a href="tel:+1975456789"><i class="bx bx-phone"></i> +88 02-9033071</a></li>
+                            <li><a href="mailto:info@cyberdynetechnologyltd.com"><i class="bx bxs-envelope"></i> info@cyberdynetechnologyltd.com</a></li>
+                            <li><a href="mailto:contact@cyberdynetechnologyltd.com"><i class="bx bxs-envelope"></i> contact@cyberdynetechnologyltd.com</a></li>
+                            <li><i class="bx bxs-map"></i> 1/6/1 (Ground Floor), Tolarbag (Panir Tank Goli), Mirpur-1, Dhaka-1216</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="solutions.html">Services</a></li>
+                            <!--<li><a href="case.html">Case Studies</a></li>-->
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>
+                            Copyright @2020 All Rights Reserved by
+                            <a href="http://cyberdynetechnologyltd.com" target="_blank">
+                                    Cyberdyne Technology Ltd.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class='bx bx-chevrons-up'></i>
+        <i class='bx bx-chevrons-up'></i>
+    </div>
+    <!-- End Go Top Area -->
+
+
+    <!-- jQuery Min JS -->
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <!-- Boostrap Js  -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- MeanMenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl carasol Js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Boxicon Js -->
+    <script src="assets/js/boxicons.js"></script>
+    <!-- Wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Isotope Js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator Js  -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact Form Js -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
